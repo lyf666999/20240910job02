@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>lyf-bulb</title>
+</head>
+<body>
+    <h3>点击灯泡可以实现打开和关闭功能</h3>
+    <img  id="myimsge"  onclick="ChangeImage()"  src="images/pic_bulboff.gif" width="100" height="180">
+
+    <script>
+        function changeImage(){
+            const element = document.getElementById("myimage")
+            let a = element.src.endswith("pic_bulboff.gif");
+            console.log(a);
+            if(element.src.endswith("pic_bulboff.gif"))
+        {
+                element.src = "images/pic_bulbon.gif";
+        }else
+        {
+                element.src = "images/pic_bulboff.gif";
+        }
+        }
+        </script>
+
+</body>
+</html>
